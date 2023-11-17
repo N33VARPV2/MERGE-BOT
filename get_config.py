@@ -25,8 +25,8 @@ load_dotenv(
     override=True,
 )
 # tired of redeploying :(
-UPSTREAM_REPO = os.environ.get('UPSTREAM_REPO')
-UPSTREAM_BRANCH = os.environ.get('UPSTREAM_BRANCH')
+UPSTREAM_REPO = os.environ.get('https://github.com/yashoswalyo/MERGE-BOT')
+UPSTREAM_BRANCH = os.environ.get('master')
 try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
